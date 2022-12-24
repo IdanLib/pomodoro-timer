@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+}
+
+.bg {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* The image used */
+    background-image: linear-gradient(to left bottom, #ffbc00, #c9d939, #90ec79, #52f8ba, #11fff4);
+    /* Full height */
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    color: white;
+    text-shadow: 2 2 2 rgba(0, 0, 0, 0.2);
+}
+
+#background {
+    background-image: linear-gradient(to left bottom, #ffbc00, #c9d939, #90ec79, #52f8ba, #11fff4);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-shadow: 2 2 2 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#timer-framework {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    margin: auto;
+}
+
+.buttons-and-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#time-left {
+    font-size: 4rem;
+}
+
+.label {
+    font-size: 1.3rem;
+}
+
+.length {
+    font-size: 1.7rem;
+}

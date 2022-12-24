@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⏰ Customizable Pomodoro Timer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body id="body" >
+    <div id="" class="bg ">
+        <div id="overlay" class="d-flex justify-content-center align-items-center color-overlay">
+            <div id="timer-framework" class="container-fluid py-2">
+                <h1 class="p-2">Work-Break Timer</h1>
+                <h2>Customize Your Work and Break Sessions</h2>
+                <div id="settings" class="row p-2">
+                    <div id="break-settings" class=" col-md-6 col-sm-6">
+                        <div class="label p-2" id="break-label">Break Length</div>
+                        <div class=" buttons-and-value">
+                            <button class="btn btn-lg btn-warning len-button" id="break-decrement">-</button>
+                            <div class="label length" id="break-length">5</div>
+                            <button class="btn btn-lg btn-success len-button" id="break-increment">+</button>
+                        </div>
+                    </div>
+                    <div id="session-settings" class="col-md-6 col-sm-6">
+                        <div id="session-label" class="label p-2">Session Length</div>
+                        <div class="buttons-and-value">
+                            <button class="btn btn-warning btn-lg len-button" id="session-decrement">-</button>
+                            <div class="label length" id="session-length">25</div>
+                            <button class="btn btn-success btn-lg len-button" id="session-increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="countdown-wrapper" class="p-2 ">
+                    <div id="label-and-counter">
+                        <div class="p-2" id="timer-label"></div>
+                        </div>
+                        <audio type="audio/mpeg" id="beep" src="./lick.wav"></audio>
+                        <div class="" id="time-left">25:00</div>
+                    </div>
+                    <div id="controls" class="p-1">
+                        <button class="btn btn-primary btn-lg" id="start_stop">Start/ Pause</button>
+                        <button class="btn btn-outline-warning btn-lg" id="reset">Reset</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
